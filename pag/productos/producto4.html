@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Producto</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/style.css" />
+  </head>
+  <body class="producto-nana">
+
+    <header>
+      <nav>
+          <ul>
+              <li><a href="/index.html">Inicio</a></li>
+              <li><a href="/pag/registro.html">Registrarse</a></li>
+              <li><a href="/pag/login.html">Iniciar Sesión</a></li>
+              <li><a href="/pag/pago.html">Pago</a></li>
+          </ul>
+      </nav>
+    </header>
+
+    <div class="contenedor-producto-nana">
+      <div class="producto-main">
+        <div class="producto-seccion-imagen">
+          <img
+            id="main-image"
+            src="../../img/Killua Página/Killua.jpg"
+            alt="Producto Principal"
+          />
+          <div class="thumbnail-gallery">
+            <img
+              onclick="changeImage(this)"
+              src="../../img/Killua Página/Killua.jpg"
+              alt="Miniatura 4"
+            />
+            <img
+              onclick="changeImage(this)"
+              src="../../img/Killua Página/Killua 1.jpg"
+              alt="Miniatura 2"
+            />
+          </div>
+        </div>
+
+        <div class="producto-detalles">
+          <h1>KILLUA ZOLDYCK </h1>
+          <p>
+            <a>
+                "No tienes por qué darle las gracias a tus amigos."
+            </a>
+            Funko Pop! presenta, dentro de su colección Pop! Animation,
+            la figura de Killua Zoldyck (Dios de la Velocidad). Mide 10 cm
+            y está inspirada en su técnica "Godspeed" del anime y manga "Hunter x Hunter".
+            Incluye detalles dinámicos como su cabello electrificado, su aura de relámpagos
+            y su posición de ataque lista para la acción.
+          </p>
+
+          <div class="detalles-producto">
+            <h2>Detalles del Producto</h2>
+
+            <div class="detalles-preview">
+                <p><strong>Tema:</strong> Anime</p>
+                <p><strong>Marca:</strong> Funko Pop</p>
+                <p><strong>Color:</strong> Multicolor</p>
+                <p><strong>Estilo:</strong> Moderno</p>
+                <p><strong>Material:</strong> Sintético, Vinilo</p>
+                <p><strong>Ocasión:</strong> Cumpleaños, Navidad, Aniversario</p>
+            </div>
+
+            <input type="checkbox" id="toggle-detalles" class="toggle-checkbox">
+            
+            <div class="detalles-extra">
+                <p><strong>Dimensiones del producto:</strong> 11,3l. x 9,5an. x 16,4al. centímetros
+            </p>
+            <p><strong>Personaje en dibujos animados:</strong> Killua Zoldyck</p>
+            <p>
+              <strong>Usos específicos del producto:</strong> Interiores
+            </p>
+            <p>
+              <strong>Función especial:</strong> Coleccionable, Duradero, Carga rápida.
+            </p>
+            </div>
+            <label for="toggle-detalles" class="ver-mas-btn"></label>
+          </div>
+
+          <p class="precio">€20.00</p>
+          <button>Añadir al Carrito</button>
+          <div class="volver-inicio">
+            <a href="/index.html">Volver al Inicio</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function changeImage(thumbnail) {
+        document.getElementById("main-image").src = thumbnail.src;
+      }
+    </script>
+  </body>
+</html>

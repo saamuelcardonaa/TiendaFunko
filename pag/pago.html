@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Pago</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="pagina-pago">
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="registro.html">Registrarse</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+                <li><a href="pago.html">Pago</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contenedor-pago">
+        <h2>Resumen de Compra</h2>
+        
+        <table class="tabla-pago">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Funko Pop! Rengoku</td>
+                    <td>1</td>
+                    <td>€19,50</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Monkey D. Luffy - Gear 5</td>
+                    <td>1</td>
+                    <td>€20,00</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Killua Zoldyck - Godspeed</td>
+                    <td>1</td>
+                    <td>€20,00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total</td>
+                    <td>€59,50</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h2>Método de Pago</h2>
+        <form class="formulario-pago">
+            <div class="opciones-pago">
+                <label><input type="radio" name="metodo-pago" required> Tarjeta de Crédito</label>
+                <label><input type="radio" name="metodo-pago"> PayPal</label>
+                <label><input type="radio" name="metodo-pago"> Google Pay</label>
+                <label><input type="radio" name="metodo-pago"> Apple Pay</label>
+            </div>
+
+            <div class="input-pago">
+                <label for="tarjeta">Número de Tarjeta:</label>
+                <input type="text" id="tarjeta" name="tarjeta" required placeholder="0000 0000 0000 0000">
+            </div>
+
+            <div class="input-group">
+                <div class="input-pago">
+                    <label for="vencimiento">Fecha de Vencimiento:</label>
+                    <input type="month" id="vencimiento" name="vencimiento" required>
+                </div>
+                <div class="input-pago">
+                    <label for="cvv">Código CVV:</label>
+                    <input type="text" id="cvv" name="cvv" required placeholder="123" maxlength="3">
+                </div>
+            </div>
+
+            <button type="submit" class="boton-pago">Finalizar Pago</button>
+        </form>
+
+        <div class="volver-inicio">
+            <a href="../index.html">Volver al Inicio</a>
+        </div>
+    </div>
+
+</body>
+</html>

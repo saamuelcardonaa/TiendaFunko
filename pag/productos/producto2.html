@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Producto</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/style.css" />
+  </head>
+  <body class="producto-nana">
+
+    <header>
+      <nav>
+          <ul>
+              <li><a href="/index.html">Inicio</a></li>
+              <li><a href="/pag/registro.html">Registrarse</a></li>
+              <li><a href="/pag/login.html">Iniciar Sesión</a></li>
+              <li><a href="/pag/pago.html">Pago</a></li>
+          </ul>
+      </nav>
+    </header>
+
+    <div class="contenedor-producto-nana">
+      <div class="producto-main">
+        <div class="producto-seccion-imagen">
+          <img
+            id="main-image"
+            src="../../img/Rengoku Página/rengoku.jpg"
+            alt="Producto Principal"
+          />
+          <div class="thumbnail-gallery">
+            <img
+              onclick="changeImage(this)"
+              src="../../img/Rengoku Página/rengoku.jpg"
+              alt="Miniatura 4"
+            />
+            <img
+              onclick="changeImage(this)"
+              src="../../img/Rengoku Página/rengoku 2.jpg"
+              alt="Miniatura 2"
+            />
+            <img
+              onclick="changeImage(this)"
+              src="../../img/Rengoku Página/rengoku 3.jpg"
+              alt="Miniatura 3"
+            />
+          </div>
+        </div>
+
+        <div class="producto-detalles">
+          <h1>RENGOKU KYOJURO</h1>
+          <p>
+            <a>
+              "Vive con orgullo. Si te vence tu debilidad, calienta tu corazón,
+              aprieta los dientes y sigue adelante. Aunque tu cobardía te frene,
+              eso no detendrá el paso del tiempo; todos llegaremos a nuestro fin
+              tarde o temprano, no te sientas triste por ello."
+            </a>
+
+            Funko Pop! presenta, dentro de su colección Pop! Animation,
+            la figura de Rengoku Kyojuro. Mide 10 cm y está basada en el personaje
+            del anime y manga "Demon Slayer: Kimetsu no Yaiba".
+            Incluye detalles característicos como su expresión confiada, su haori con llamas
+            y su katana Nichirin envuelta en fuego.
+          </p>
+
+          <div class="detalles-producto">
+            <h2>Detalles del Producto</h2>
+
+            <div class="detalles-preview">
+                <p><strong>Tema:</strong> Anime</p>
+                <p><strong>Marca:</strong> Funko Pop</p>
+                <p><strong>Color:</strong> Multicolor</p>
+                <p><strong>Estilo:</strong> Stylized</p>
+                <p><strong>Material:</strong> Vinilo</p>
+                <p><strong>Ocasión:</strong> Cumpleaños, Navidad, Aniversario</p>
+            </div>
+
+            <input type="checkbox" id="toggle-detalles" class="toggle-checkbox">
+            
+            <div class="detalles-extra">
+                <p><strong>Dimensiones del producto:</strong> 10l. x 10an. x 10al. centímetros
+            </p>
+            <p><strong>Personaje en dibujos animados:</strong> Kyojuro Rengoku</p>
+            <p>
+              <strong>Usos específicos del producto:</strong> Coleccionables,
+              Mantener dentro de la caja.
+            </p>
+            <p>
+              <strong>Función especial:</strong> Coleccionable, Figura de Vinilo
+            </p>
+            </div>
+            <label for="toggle-detalles" class="ver-mas-btn"></label>
+          </div>
+
+          <p class="precio">€19.50</p>
+          <button>Añadir al Carrito</button>
+          <div class="volver-inicio">
+            <a href="/index.html">Volver al Inicio</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function changeImage(thumbnail) {
+        document.getElementById("main-image").src = thumbnail.src;
+      }
+    </script>
+  </body>
+</html>

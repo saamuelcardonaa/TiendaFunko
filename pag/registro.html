@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="pagina-registro">
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="registro.html">Registrarse</a></li>
+                <li><a href="../pag/login.html">Iniciar Sesión</a></li>
+                <li><a href="pago.html">Pago</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contenedor-registro">
+        <div class="caja-registro">
+            <h2>Registro</h2>
+            <form>
+                <div class="input-caja">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="input-caja">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos" name="apellidos" required>
+                </div>
+                <div class="input-caja">
+                    <label for="username">Nombre de Usuario</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-caja">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-caja">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="check-mayor">
+                    <input type="checkbox" id="mayor" name="mayor" required>
+                    <label for="mayor">Confirmo que soy mayor de 18 años</label>
+                </div>
+
+
+                <button type="submit">Registrarse</button>
+            </form>
+            <div class="login-link">
+                <p>¿Ya tienes cuenta? <a href="login.html">Inicia Sesión</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
